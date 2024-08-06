@@ -24,3 +24,12 @@ jobs:
 
     - name: Run tests
       run: mvn test
+
+    - name: Generate Coverage Report
+      run: mvn jacoco:report
+
+    - name: Upload Coverage Report
+      uses: actions/upload-artifact@v3
+      with:
+        name: coverage-report
+        path: target/site/jacoco/
