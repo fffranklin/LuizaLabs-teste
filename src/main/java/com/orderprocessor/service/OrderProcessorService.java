@@ -72,7 +72,7 @@ public class OrderProcessorService {
                 e.printStackTrace();
             }
         }
-    }
+    }    
            
     private void setOrderData(String line) {
     	userId = Integer.parseInt(line.substring(0, 10).trim());

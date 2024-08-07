@@ -7,6 +7,7 @@ import com.orderprocessor.model.Order;
 import com.orderprocessor.model.Product;
 import com.orderprocessor.model.User;
 import com.orderprocessor.service.OrderProcessorService;
+import com.orderprocessor.utils.fileUtils;
 
 import java.io.IOException;
 import java.util.List;
@@ -28,7 +29,6 @@ public class PedidoProcessorServiceTest {
       
     @Test
     public void testConvertJsonWithComplexData() throws JsonIOException, IOException {
-        OrderProcessorService service = new OrderProcessorService();
 
         User user1 = new User();
         	user1.setUserId(1);
@@ -56,7 +56,7 @@ public class PedidoProcessorServiceTest {
         order2.getProducts().add(product2);
         	user2.getOrders().add(order2);
 
-        String json = service.convertToJson(List.of(user1, user2));
+        String json = fileUtils.convertToJson(List.of(user1, user2));
         assertNotNull(json);
         assertTrue(json.contains("User1"));
         assertTrue(json.contains("User2"));
@@ -67,14 +67,13 @@ public class PedidoProcessorServiceTest {
     
     @Test
     public void testConvertJson() throws JsonIOException, IOException {
-    	OrderProcessorService service = new OrderProcessorService();
+    	
     	User user = new User();
     		user.setUserId(1);
     		user.setName("LuMagalu");
     		
-    	String json = service.convertToJson(List.of(user));
+    	String json = fileUtils.convertToJson(List.of(user));
     		assertNotNull(json);
     		assertTrue(json.contains("LuMagalu"));
-    	
     }
 }
