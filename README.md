@@ -1,4 +1,4 @@
-<b> ORDER-PROCESSOR CODE CHALLENGE </b> 
+<b> ORDER-PROCESSOR -> LUIZALABS CODE CHALLENGE </b> 
 
 This project is a software engineering job application task for Luizalabs. It entails developing an OrderProcessor that reads an *txt file* to extract entity data based on *User*, *Product*, and *Order*, and then generates a *JSON file* with the normalized data.
 
@@ -9,7 +9,7 @@ Tech Specifications:
 - JUnit 5 version 5.8.2
 - GSON library version 2.10.1
 
-<b>_Java 17 feature_</b> used: <b> Records </b>
+<b> --> _Java 17 feature_ applied</b>: <b> Records </b>
 
 
 
