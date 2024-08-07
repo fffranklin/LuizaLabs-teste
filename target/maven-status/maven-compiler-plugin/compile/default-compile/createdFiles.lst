@@ -1,5 +1,5 @@
-com\pedidoprocessor\util\FileUtil.class
-com\pedidoprocessor\model\User.class
-com\pedidoprocessor\model\Order.class
-com\pedidoprocessor\model\Product.class
-com\pedidoprocessor\service\PedidoProcessorService.class
+com\orderprocessor\model\Product.class
+com\orderprocessor\utils\fileUtils.class
+com\orderprocessor\service\OrderProcessorService.class
+com\orderprocessor\model\User.class
+com\orderprocessor\model\Order.class

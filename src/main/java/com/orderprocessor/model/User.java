@@ -1,4 +1,5 @@
-package com.pedidoprocessor.model;
+package com.orderprocessor.model;
+
 import java.util.ArrayList;
 import java.util.List;
 
